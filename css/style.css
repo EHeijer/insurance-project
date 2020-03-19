@@ -10,93 +10,128 @@ body {
 
 .wrapper {
     display: grid;
-    margin-left: 250px;
-    margin-right: 250px;
-    padding: 0;
     min-width: 1067px;
+    padding: 0;
+    max-width: 1067px;
+    margin: auto;
 }
 
 .top-container {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 310px 310px;
+    grid-template-rows: 300px 300px;
     grid-template-areas: 
     "family side-box-a"
     "family side-box-b";
     text-align: center;
     
-    
-    
 }
 
-.top-container .family-box {
+.family-box {
     grid-area: family;
     min-height: 500px;
-    display: grid;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
     background-color: rgb(189, 215, 216);
-    
+    text-align: left;
+    align-items: flex-start;
+    background-image: url(/img/family.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
 }
 
 .family-box h1 {
     
     font-family: 'Times New Roman', Times, serif;
     font-size: 3rem;
-    margin-bottom: 0;
-    max-width: 290px;
+    font-weight: bolder;
+    padding-left: 110px;
+    max-width: 300px;
     display: grid;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .family-box p {
     font-size: 0.9rem;
-    margin-top: 0;
-    color: gray;
-    max-width: 260px;
+    font-weight: bolder;
+    margin: 0;
+    padding-left: 110px;
+    color: rgb(45, 45, 56);
+    max-width: 275px;
     display: grid;
-    
+    line-height: 1.6;
 }
 
 .button {
-    display: grid;
+    display: flex;
+    font-weight: bolder;
+    font-size: 0.7rem;
     text-decoration: none;
-}
-
-img {
-    display: grid;
+    color: black;
+    background-color: white;
+    padding: 15px 50px 15px 50px;
+    border-radius: 25px;
+    align-self: center;
     position: relative;
-    left: 80px;
-    top: 15px;
-}
-
-
-.side-box {
-    display: grid;
-    align-content: center;
-   
-}
-
-.side-box .side-text {
-    font-size: 1.1;
+    right: 80px;
+    top: 50px;
     
 }
+
 
 .side-box-a {
     grid-area: side-box-a;
-    background-color: rgb(210, 81, 30);
-    
+    background-color: coral;
+    display: grid;
+    align-items: center;
+}
+
+.side-box-a a {
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 0.7rem;
+    color: rgba(0, 0, 0, 0.507);
+    margin: 0;
+    padding: 0;
+}
+
+.side-box-a h2 {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+    padding: 0;
+    margin:0;
 }
 
 .side-box-b {
     grid-area: side-box-b;
-    background-color: rgba(255, 136, 0, 0.63);
+    background-color:rgb(250, 174, 33);
+    display: grid;
+    align-items: center;
+    
 }
 
+.side-box-b a {
+    font-weight: bolder;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.507);
+    font-size: 0.7rem;
+    margin: 0;
+    padding: 0;
+}
 
+.side-box-b h2 {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+    padding: 0;
+    margin:0;
+}
 
 .nav ul {
     display: grid;
-    padding: 0;
+    padding: 0px 170px 0px 170px;
     list-style: none;
     grid-template-columns: repeat(4, 1fr);
     
@@ -108,21 +143,85 @@ img {
     text-decoration: none;
     padding: 1em;
     text-align: center;
-
+    font-weight: bold;
+    font-size: 0.75rem;
+    text-decoration: none;
+    color: rgb(143, 134, 134);
 }
 
 .main {
     display: grid;
-    grid-template-rows: 90vh 90vh;
-    
+    grid-template-rows: 85vh 85vh;
+    position: relative;
 }
 
 .main .top-main {
     background-color: rgb(180, 177, 177);
 }
 
+.safety {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    justify-content: space-evenly;
+    
+}
+
+.safety h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3.5rem;
+    color: white;
+    max-width: 375px;
+    padding-top: 90px;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.safety p {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: rgb(45, 45, 56);
+    max-width: 320px;
+    line-height: 2;
+    padding-top: 90px;
+    margin-bottom: 0;
+}
+
+.button2 {
+    display: flex;
+    font-weight: bolder;
+    font-size: 0.7rem;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 25px;
+    position:absolute;
+    padding: 15px 50px 15px 50px;
+    left: 125px;
+}
+
 .main .bottom-main {
-    background-color: rgba(255, 136, 0, 0.63);
+    background-color:rgb(250, 174, 33);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about-us h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    color: white;
+    padding-top: 75px;
+}
+
+.about-us p {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgb(45, 45, 56);
+    max-width: 500px;
+    line-height: 1.5;
+    
 }
 
 .info-box-left {
@@ -130,8 +229,9 @@ img {
     width: 270px;
     height: 310px;
     background-color: white;
-    top: 1220px;
-    left: 350px;
+    top: 510px;
+    left: 100px;
+    border-radius: 7px;
 }    
 
 .info-box-center {
@@ -139,8 +239,9 @@ img {
     width: 270px;
     height: 310px;
     background-color: white;
-    left: 655px;
-    top: 1220px;
+    top: 510px;
+    left: 400px;
+    border-radius: 7px;
 }
 
 .info-box-right {
@@ -148,14 +249,15 @@ img {
     width: 270px;
     height: 310px;
     background-color: white;
-    left: 960px;
-    top: 1220px;
+    top: 510px;
+    left: 700px;
+    border-radius: 7px;
 }
 
 .guide-boxes {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 45vh 45vh;
+    grid-template-rows: 350px 350px;
 }
 
 .box1 {
@@ -182,22 +284,38 @@ img {
     background-color: white;
 }
 
-.nav-footer ul{
+.nav-footer {
+    background-color: rgb(180, 178, 178);
+    line-height: 0.9em;
+    padding: 15px;
+}
+
+.nav-footer ul {
     
     display: grid;
-    padding: 0;
     list-style: none;
     grid-template-columns: 1fr;
-    margin: 0;
+    margin-top: 0;
+    padding: 0;
 }
 
 .nav-footer a {
-    background-color: rgb(180, 178, 178);
+    
     display: block;
     text-decoration: none;
-    padding: 1.8em;
+    padding: 0;
     text-align: center;
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.582);
+    margin: 0;
     
+}
+
+.nav-footer p {
+    padding: 0;
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: lighter;
 }
 
 .bottom-box {
