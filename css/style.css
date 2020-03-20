@@ -39,6 +39,7 @@ body {
     background-image: url(/img/family.png);
     background-position: right bottom;
     background-repeat: no-repeat;
+    
 }
 
 .family-box h1 {
@@ -151,7 +152,7 @@ body {
 
 .main {
     display: grid;
-    grid-template-rows: 85vh 85vh;
+    grid-template-rows: 95vh 95vh;
     position: relative;
 }
 
@@ -198,6 +199,7 @@ body {
     position:absolute;
     padding: 15px 50px 15px 50px;
     left: 125px;
+    top: 370px;
 }
 
 .main .bottom-main {
@@ -229,19 +231,84 @@ body {
     width: 270px;
     height: 310px;
     background-color: white;
-    top: 510px;
+    top: 550px;
     left: 100px;
     border-radius: 7px;
-}    
+    display: grid;
+    align-items: end;
+    text-align: center;
+    
+}
+
+.child {
+    position: absolute;
+    left: 12.5px;
+    bottom: 190px;
+    width: 245px;
+    height: 155px;
+    background-color: rgb(189, 215, 216);
+    border-radius: 5px;
+    background-image: url(/img/child.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.info-box-left h4 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.info-box-left p {
+    font-weight: 700;
+    font-size: 0.7rem;
+    color: rgba(45, 45, 56, 0.61);
+    line-height: 2;
+    max-width: 85%;
+    margin: auto;
+    padding: 10px;
+}
 
 .info-box-center {
     position: absolute;
     width: 270px;
     height: 310px;
     background-color: white;
-    top: 510px;
+    top: 550px;
     left: 400px;
     border-radius: 7px;
+    display: grid;
+    align-items: end;
+    text-align: center;
+}
+
+.adult {
+    position: absolute;
+    left: 12.5px;
+    bottom: 190px;
+    width: 245px;
+    height: 155px;
+    background-color:rgb(250, 174, 33);
+    border-radius: 5px;
+    background-image: url(/img/adult.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.info-box-center h4 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.info-box-center p {
+    font-weight: 700;
+    font-size: 0.7rem;
+    color: rgba(45, 45, 56, 0.61);
+    line-height: 2;
+    max-width: 85%;
+    margin: auto;
+    padding: 10px;
 }
 
 .info-box-right {
@@ -249,9 +316,41 @@ body {
     width: 270px;
     height: 310px;
     background-color: white;
-    top: 510px;
+    top: 550px;
     left: 700px;
     border-radius: 7px;
+    display: grid;
+    align-items: end;
+    text-align: center; 
+}
+
+.old-fart {
+    position: absolute;
+    left: 12.5px;
+    bottom: 190px;
+    width: 245px;
+    height: 155px;
+    background-color: coral;
+    border-radius: 5px;
+    background-image: url(/img/old.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.info-box-right h4 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.info-box-right p {
+    font-weight: 700;
+    font-size: 0.7rem;
+    color: rgba(45, 45, 56, 0.61);
+    line-height: 2;
+    max-width: 85%;
+    margin: auto;
+    padding: 10px;
 }
 
 .guide-boxes {
@@ -260,12 +359,37 @@ body {
     grid-template-rows: 350px 350px;
 }
 
+.guide-boxes div .number{
+    display: grid;
+    text-align: start;
+    padding: 35px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.box p {
+    display: grid;
+    text-align: center;
+    padding: 30px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.719);
+}
+
 .box1 {
     background-color: lightblue;
+    display: grid;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+    text-align: center;
+    align-items: center;
+    margin: 0;
 }
 
 .box2 {
     background-color: white;
+    
 }
 
 .box3 {
@@ -283,6 +407,8 @@ body {
 .box6 {
     background-color: white;
 }
+
+
 
 .nav-footer {
     background-color: rgb(180, 178, 178);
