@@ -77,15 +77,22 @@ body {
     position: relative;
     right: 80px;
     top: 50px;
-    
+    box-shadow: 0 2px 0 rgb(243, 234, 234);
 }
 
+.button:hover {
+    transform: scale(1.1);
+}
 
 .side-box-a {
     grid-area: side-box-a;
     background-color: coral;
     display: grid;
     align-items: center;
+}
+
+.side-box-a a:hover {
+    transform: scale(1.1);
 }
 
 .side-box-a a {
@@ -96,6 +103,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 
 .side-box-a h2 {
     color: white;
@@ -122,6 +130,10 @@ body {
     padding: 0;
 }
 
+.side-box-b a:hover {
+    transform: scale(1.1);
+}
+
 .side-box-b h2 {
     color: white;
     font-family: 'Times New Roman', Times, serif;
@@ -132,7 +144,7 @@ body {
 
 .nav ul {
     display: grid;
-    padding: 0px 170px 0px 170px;
+    padding: 5px 170px 5px 170px;
     list-style: none;
     grid-template-columns: repeat(4, 1fr);
     
@@ -146,8 +158,11 @@ body {
     text-align: center;
     font-weight: bold;
     font-size: 0.75rem;
-    text-decoration: none;
     color: rgb(143, 134, 134);
+}
+
+.nav a:hover {
+    color: black;
 }
 
 .main {
@@ -200,6 +215,10 @@ body {
     padding: 15px 50px 15px 50px;
     left: 125px;
     top: 370px;
+    box-shadow: 0 2px 0 rgba(131, 126, 126, 0.774);
+}
+.button2:hover {
+    transform: scale(1.1);
 }
 
 .main .bottom-main {
@@ -237,7 +256,11 @@ body {
     display: grid;
     align-items: end;
     text-align: center;
-    
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.068);
+}
+
+.info-box-left:hover {
+    transform: scale(1.1);
 }
 
 .child {
@@ -280,6 +303,11 @@ body {
     display: grid;
     align-items: end;
     text-align: center;
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.068);
+}
+
+.info-box-center:hover {
+    transform: scale(1.1);
 }
 
 .adult {
@@ -322,6 +350,11 @@ body {
     display: grid;
     align-items: end;
     text-align: center; 
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.068);
+}
+
+.info-box-right:hover {
+    transform: scale(1.1);
 }
 
 .old-fart {
@@ -437,6 +470,10 @@ body {
     
 }
 
+.nav-footer a:hover {
+    color: black;
+}
+
 .nav-footer p {
     padding: 0;
     margin: 0;
@@ -449,3 +486,4 @@ body {
     grid-template-rows: 55vh;
     background-color: rgb(138, 128, 128);
 }
+
