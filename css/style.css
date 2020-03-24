@@ -11,15 +11,25 @@ body {
 .wrapper {
     display: grid;
     min-width: 1067px;
-    padding: 0;
     max-width: 1067px;
     margin: auto;
+    padding: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 600px 80px auto 90vh auto 55vh;
+    grid-template-areas: 
+    "top"
+    "nav"
+    "main"
+    "boxes"
+    "up-nav"
+    "footer";
 }
 
 .top-container {
+    grid-area: top;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 300px 300px;
+    grid-template-rows: 50% 50%;
     grid-template-areas: 
     "family side-box-a"
     "family side-box-b";
@@ -142,6 +152,10 @@ body {
     margin:0;
 }
 
+.nav {
+    grid-area: nav;
+}
+
 .nav ul {
     display: grid;
     padding: 5px 170px 5px 170px;
@@ -166,6 +180,7 @@ body {
 }
 
 .main {
+    grid-area: main;
     display: grid;
     grid-template-rows: 95vh 95vh;
     position: relative;
@@ -387,9 +402,10 @@ body {
 }
 
 .guide-boxes {
+    grid-area: boxes;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 350px 350px;
+    grid-template-rows: 45vh 45vh;
 }
 
 .guide-boxes div .number{
@@ -441,9 +457,8 @@ body {
     background-color: white;
 }
 
-
-
 .nav-footer {
+    grid-area: up-nav;
     background-color: rgb(180, 178, 178);
     line-height: 0.9em;
     padding: 15px;
@@ -482,6 +497,7 @@ body {
 }
 
 .bottom-box {
+    grid-area: footer;
     display: grid;
     grid-template-rows: 55vh;
     background-color: rgb(138, 128, 128);
