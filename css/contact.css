@@ -27,7 +27,7 @@ body {
     background-color:#d7e0fc;
     text-align: center;
     align-items: center;
-    background-image: url(/img/Skärmklipp.PNG);
+    background-image: url(../img/Skärmklipp.PNG);
     background-repeat: no-repeat;
     background-position: 93% 105%;
     
@@ -136,7 +136,7 @@ input, textarea {
 .map {
     width: 100%;
     height: 500px;
-    background-image: url(/img/map.png);
+    background-image: url(../img/map.png);
     background-repeat: no-repeat;
     background-color: rgb(138, 128, 128);
     margin: 0;

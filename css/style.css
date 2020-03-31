@@ -46,7 +46,7 @@ body {
     background-color: rgb(189, 215, 216);
     text-align: left;
     align-items: flex-start;
-    background-image: url(/img/family.png);
+    background-image: url(../img/family.png);
     background-position: right bottom;
     background-repeat: no-repeat;
     
@@ -286,7 +286,7 @@ body {
     height: 155px;
     background-color: rgb(189, 215, 216);
     border-radius: 5px;
-    background-image: url(/img/child.png);
+    background-image: url(../img/child.png);
     background-repeat: no-repeat;
     background-position: center bottom;
 }
@@ -333,7 +333,7 @@ body {
     height: 155px;
     background-color:rgb(250, 174, 33);
     border-radius: 5px;
-    background-image: url(/img/adult.png);
+    background-image: url(../img/adult.png);
     background-repeat: no-repeat;
     background-position: center bottom;
 }
@@ -380,7 +380,7 @@ body {
     height: 155px;
     background-color: coral;
     border-radius: 5px;
-    background-image: url(/img/old.png);
+    background-image: url(../img/old.png);
     background-repeat: no-repeat;
     background-position: center bottom;
 }
